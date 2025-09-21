@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recover Highlights</title>
+</head>
+<body>
+    <h2>Highlight Recovery Tool</h2>
+    <button id="checkStorage">Check Storage</button>
+    <button id="exportAll">Export All Data</button>
+    <div id="results"></div>
+    
+    <script>
+        document.getElementById('checkStorage').onclick = async () => {
+            const all = await chrome.storage.local.get();
+            const results = document.getElementById('results');
+            results.innerHTML = '<pre>' + JSON.stringify(all, null, 2) + '</pre>';
+            console.log('All storage:', all);
+        };
+        
+        document.getElementById('exportAll').onclick = async () => {
+            const all = await chrome.storage.local.get();
+            const blob = new Blob([JSON.stringify(all, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'all-highlights-backup.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        };
+    </script>
+</body>
+</html>
