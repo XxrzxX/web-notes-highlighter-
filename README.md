@@ -60,7 +60,7 @@ web-notes-highlighter/
 - Local storage only - no external data transmission
 - Minimal permissions requested
 
-# ⚠️ Security Warning
+## ⚠️ Security Warning
 
 **DO NOT use this extension on untrusted or suspicious websites.**
 
