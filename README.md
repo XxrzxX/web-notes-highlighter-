@@ -41,7 +41,7 @@ A browser extension that allows you to highlight text on web pages, organize hig
 ## File Structure
 
 ```
-webextintionsme/
+web-notes-highlighter/
 ├── manifest.json          # Extension configuration
 ├── background.js          # Context menu handler
 ├── content.js            # Main highlighting functionality
