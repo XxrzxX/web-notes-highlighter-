@@ -60,6 +60,17 @@ web-notes-highlighter/
 - Local storage only - no external data transmission
 - Minimal permissions requested
 
+# ⚠️ Security Warning
+
+**DO NOT use this extension on untrusted or suspicious websites.**
+
+**Safe:** Educational sites, documentation, news, research papers  
+**Avoid:** Suspicious sites, excessive ads, unknown domains
+
+**Why:** Malicious websites could interfere with extension functionality or attempt to exploit browser vulnerabilities.
+
+**Use only on trusted websites for study and research purposes.**
+
 ## Browser Compatibility
 
 - ✅ Chrome (Manifest V3)
